@@ -1,0 +1,169 @@
+/* 
+background-image: url(../assets/img-story-main.png);
+*/
+
+
+/* General */
+* {
+	font-family: Helvetica;
+	font-size: 22px;
+	color: seashell;
+	background-color: black;
+	opacity: 0.9;
+	text-align: center;
+}
+
+/* Header */
+	header {
+		display: flex;
+		width: 100%;
+		height: 69px;
+		background-color: black;
+		align-items: center;
+		position: fixed;
+		top: 0;
+		font-family: Verdana;
+		font-size: 14px;
+		font-weight: bold;
+		border-bottom: solid white 1px;
+		z-index: 1;
+
+	}
+
+	header > * {
+		display: inline-block;
+		flex-grow: 1;
+
+
+	}
+
+	header .logo img {
+		margin: 0 10px 0 0;
+		height: 50px;
+		width: auto;
+
+	}
+
+	header nav {
+		margin-right: 30px;
+		text-align: right;
+
+	}
+
+	header nav a {
+		margin: auto 20px;
+		color: white;
+		text-decoration-line: underline;
+		text-decoration-style: solid;
+
+	}
+
+/* Container */
+	.container {
+		position: relative;
+		top: 60px;
+		background-color: black;
+		z-index: 0;
+		padding-top: 10px;
+		padding-bottom: 70px;
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content:  center;
+		align-items: center;
+		padding: 0px 20px 0px 20px;
+	}
+
+	.container > *{
+		border: solid white 1px;
+	}
+
+/* Splash */
+	#splash{
+		border: solid white 1px;
+		background-color: white;
+		background-image: url(../assets/img-mission-background.jpg);
+		width: 1200px;
+		height: 700px;
+		display: flex;
+		align-items: center;
+	}
+
+	#mission{
+		display: inline-block;
+		height: 20%;
+		width: 100%;
+	}
+
+/* Middle */
+	#middle{
+		margin: 25px;
+	}
+
+
+	#middle img{
+		width: 300px;
+		height: 200px;
+	}
+
+	.gallery{
+		display: flex;
+		flex-flow: row wrap;
+		padding:  10px 100px 0px 100px;
+		justify-content: center;
+	}
+
+	.gallery article{
+		padding: 12.5px;
+	}
+
+/* Locations */
+	#location{
+		background-color: white;
+		background-image: url(../assets/img-locations-background.jpg);
+		display: flex;
+		flex-flow: column nowrap;
+		height: 500px;
+		width: 1200px;
+	}
+
+	#location > *{
+		border: solid blue 2px;
+	}
+
+	#location h4{
+		background: none;
+		margin-bottom: 15px;
+		padding-top: 50px;
+	}
+
+	#location .contact_card{
+		background: none;
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: center;
+
+	}
+
+	#location .contact_card article{
+		margin: 0px 20px;
+		width: 300px;
+	}
+
+footer{
+	width: 100%;
+}
+
+
+#footer{
+	height: 200px;
+	display: flex;
+	flex-flow: column nowrap;
+}
+
+#footer > *{
+	margin: 15px;
+}
+
+#copyright{
+	text-align: left;
+}
