@@ -4,16 +4,31 @@ background-image: url(../assets/img-story-main.png);
 
 
 /* General */
-* {
-	font-family: Helvetica;
-	font-size: 22px;
-	color: seashell;
-	background-color: black;
-	opacity: 0.9;
-	text-align: center;
-}
+	* {
+		font-family: Helvetica;
+		font-size: 22px;
+		color: seashell;
+		background-color: black;
+		text-align: center;
 
-/* Header */
+	}
+
+	body,pre{
+		background-color: black;
+		opacity: 0.9;
+		text-align: center;
+	}
+
+	h2{
+		font-size: 30px;
+		background: none;
+	}
+
+	h5{
+		font-weight: normal;
+	}
+
+/* Navigation Header */
 	header {
 		display: flex;
 		width: 100%;
@@ -22,25 +37,35 @@ background-image: url(../assets/img-story-main.png);
 		align-items: center;
 		position: fixed;
 		top: 0;
+		left: 0;
 		font-family: Verdana;
 		font-size: 14px;
 		font-weight: bold;
 		border-bottom: solid white 1px;
 		z-index: 1;
+		padding: 0px 0px 0px 0px;
+		margin: 0px 0px 0px 0px;
 
 	}
 
 	header > * {
 		display: inline-block;
 		flex-grow: 1;
+	}
 
+	
+
+	header .logo{
+		justify-items: left;
+		text-align: left;
+		padding-left: 10px;
 
 	}
 
 	header .logo img {
 		margin: 0 10px 0 0;
 		height: 50px;
-		width: auto;
+
 
 	}
 
@@ -56,6 +81,10 @@ background-image: url(../assets/img-story-main.png);
 		text-decoration-line: underline;
 		text-decoration-style: solid;
 
+	}
+
+	div.logo{
+		width: 157.14px;
 	}
 
 /* Container */
@@ -74,12 +103,10 @@ background-image: url(../assets/img-story-main.png);
 	}
 
 	.container > *{
-		border: solid white 1px;
 	}
 
 /* Splash */
 	#splash{
-		border: solid white 1px;
 		background-color: white;
 		background-image: url(../assets/img-mission-background.jpg);
 		width: 1200px;
@@ -126,11 +153,7 @@ background-image: url(../assets/img-story-main.png);
 		width: 1200px;
 	}
 
-	#location > *{
-		border: solid blue 2px;
-	}
-
-	#location h4{
+	#location h2{
 		background: none;
 		margin-bottom: 15px;
 		padding-top: 50px;
@@ -149,21 +172,22 @@ background-image: url(../assets/img-story-main.png);
 		width: 300px;
 	}
 
-footer{
-	width: 100%;
-}
+/* Footer */
+	footer{
+		width: 100%;
+	}
 
+	#footer{
+		height: 200px;
+		display: flex;
+		flex-flow: column nowrap;
+	}
 
-#footer{
-	height: 200px;
-	display: flex;
-	flex-flow: column nowrap;
-}
+	#footer > *{
+		margin: 15px;
+	}
 
-#footer > *{
-	margin: 15px;
-}
-
-#copyright{
-	text-align: left;
-}
+	#copyright{
+		text-align: left;
+		font-size: 18px;
+	}
